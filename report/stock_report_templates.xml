@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_delivery_document_notes" inherit_id="stock.report_delivery_document">
+        <xpath expr="//div[hasclass('page')]" position="inside">
+            <div t-if="o.notes" class="mt-4 mb-4" style="page-break-inside: avoid;">
+                <div class="row">
+                    <div class="col-12">
+                        <hr class="mb-2"/>
+                        <strong>Notes:</strong>
+                        <p t-field="o.notes" class="mt-2"/>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
