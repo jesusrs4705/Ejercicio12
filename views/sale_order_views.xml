@@ -7,9 +7,9 @@
         <field name="arch" type="xml">
             <xpath expr="//sheet//notebook" position="after">
                 <group string="Notes" name="notes_group">
-                    <field name="notes" placeholder="Add your notes here..."/>
+                    <field name="notes" nolabel="1" placeholder="Add your notes here..."/>
                 </group>
             </xpath>
         </field>
     </record>
-</odoo>
+</odoo> 
